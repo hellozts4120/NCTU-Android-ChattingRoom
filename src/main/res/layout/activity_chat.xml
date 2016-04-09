@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/firstbackmohu"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dip"
+        android:id="@+id/chat_title"
+        android:background="#e04F8F9F"
+        android:layout_alignParentTop="true">
+        <Button
+            android:id="@+id/chat_back_button"
+            android:layout_width="match_parent"
+            android:layout_height="36dip"
+            android:layout_weight="1.9"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="3dip"
+            android:text="<back"
+            android:textAllCaps="false"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="@android:color/white"
+            android:textSize="7pt"
+            android:background="@android:color/transparent" />
+        <TextView
+            android:id="@+id/chat_contact_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MEMBER"
+            android:textSize="12pt"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"/>
+        <Button
+            android:id="@+id/chat_search_button"
+            android:layout_width="match_parent"
+            android:layout_height="36dip"
+            android:layout_weight="2"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="3dip"
+            android:text="Search"
+            android:textAllCaps="false"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="@android:color/white"
+            android:textSize="7pt"
+            android:background="@android:color/transparent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/divide-bar"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:orientation="horizontal"
+        android:background="#77a6b1"
+        android:layout_below="@id/chat_title">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chat_user_profie"
+        android:layout_width="match_parent"
+        android:layout_height="84dip"
+        android:orientation="horizontal"
+        android:background="#e04F8F9F"
+        android:layout_below="@id/divide-bar"
+        android:paddingTop="7dip">
+
+
+        <ImageButton
+            android:id="@+id/user_image"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_weight="3.5"
+            android:layout_marginLeft="7dip"
+            android:layout_marginTop="12dip"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/my_pic" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Jiang Hama"
+            android:textAllCaps="false"
+            android:textSize="12pt"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chat_bottom_linear"
+        android:layout_width="match_parent"
+        android:layout_height="42dip"
+        android:background="#aa000000"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="7dip"
+        android:paddingBottom="3dip">
+
+
+        <ImageButton
+            android:id="@+id/chat_bottom_look"
+            android:layout_width="match_parent"
+            android:layout_height="26dip"
+            android:layout_weight="3.5"
+            android:layout_marginLeft="7dip"
+            android:layout_marginTop="3dip"
+            android:background="@drawable/emoji" />
+        <ImageButton
+            android:id="@+id/chat_bottom_add"
+            android:layout_width="match_parent"
+            android:layout_height="26dip"
+            android:layout_weight="3.5"
+            android:layout_marginLeft="7dip"
+            android:layout_marginTop="3dip"
+            android:background="@drawable/addmore" />
+        <EditText
+            android:id="@+id/chat_bottom_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="32dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="7dip"
+            android:layout_weight="1.5"
+            android:background="@android:color/white" />
+        <Button
+            android:id="@+id/chat_bottom_sendbutton"
+            android:layout_width="match_parent"
+            android:layout_height="32dip"
+            android:layout_weight="3.2"
+            android:layout_marginRight="4dip"
+            android:layout_marginBottom="3dip"
+            android:background="#3cb0ec"
+            android:text="Send"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"/>"
+
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/msg_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chat_user_profie"
+        android:layout_above="@id/chat_bottom_linear"
+        android:fadingEdge="none"
+        android:background="@android:color/transparent"
+        android:divider="#aaaaaa"
+        android:dividerHeight="0px">
+    </ListView>
+
+
+
+
+</RelativeLayout>
