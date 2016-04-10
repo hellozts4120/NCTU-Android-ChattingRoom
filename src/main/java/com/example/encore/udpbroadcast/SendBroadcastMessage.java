@@ -37,7 +37,7 @@ public class SendBroadcastMessage extends Thread {
 
 
         byte[] data = mymsg.getBytes();
-        //224.0.0.1为广播地址
+
         InetAddress address = null;
         try {
             address = InetAddress.getByName(ip);
@@ -45,8 +45,7 @@ public class SendBroadcastMessage extends Thread {
 //            Toast.makeText(context, "Wrong IP!", Toast.LENGTH_SHORT).show();
             e.printStackTrace();
         }
-        //这个地方可以输出判断该地址是不是广播类型的地址
-//                System.out.println(address.isMulticastAddress());
+
         datapacket = new DatagramPacket(data, data.length, address,
                 8003);
         try {

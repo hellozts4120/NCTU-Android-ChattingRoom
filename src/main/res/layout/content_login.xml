@@ -125,15 +125,15 @@
             android:background="@drawable/pic7"
             android:id="@+id/pic7"
             android:layout_weight="1" />
-        </LinearLayout>
+    </LinearLayout>
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Login"
-            android:textAllCaps="false"
-            android:gravity="center"
-            android:layout_gravity="center_horizontal"
-            android:id="@+id/btnLogin" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btnLogin" />
 
 </LinearLayout>
